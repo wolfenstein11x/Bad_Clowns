@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
-    [SerializeField] float hitEffectDuration = 0.2f;
+    [SerializeField] float hitEffectDuration = 0.1f;
 
     void Update()
     {
