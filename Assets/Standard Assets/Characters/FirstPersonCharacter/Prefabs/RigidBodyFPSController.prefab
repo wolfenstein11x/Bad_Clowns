@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 5400000}
   - component: {fileID: 13600000}
   - component: {fileID: 11400004}
+  - component: {fileID: 4144360638935216417}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -302,6 +303,18 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &4144360638935216417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc33b30e37bb8b74a89739e11273558a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3805672989586429655
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 2000000}
   range: 100
+  damage: 30
   muzzleFlash: {fileID: 1656532075930461107}
   hitEffect: {fileID: 8867139208063770413, guid: c7e251a5cc8d31843b1fa22e9ce609e7, type: 3}
   hitEffectDuration: 0.1
