@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
     [SerializeField] float range = 100f;
+    [SerializeField] float damage = 30f;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
     [SerializeField] float hitEffectDuration = 0.1f;
@@ -37,6 +38,12 @@ public class Weapon : MonoBehaviour
         {
             //Debug.Log(hit.transform.name);
             CreateHitImpact(hit);
+            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+
+            // protect against null reference error when shooting non-enemy
+            if (target == null) {return;}
+
+            target.TakeDamage(damage);
         }
 
         else
