@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
+    [SerializeField] float attackOffset = 0.3f;
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
@@ -43,8 +44,7 @@ public class EnemyAI : MonoBehaviour
             ChaseTarget();
         }
 
-        // TODO: fix bug caused by enemy stopping slightly before stopping distance 
-        if (distanceToTarget <= navMeshAgent.stoppingDistance)
+        if (distanceToTarget <= (navMeshAgent.stoppingDistance + attackOffset))
         {
             AttackTarget();
         }
@@ -52,13 +52,15 @@ public class EnemyAI : MonoBehaviour
 
     private void ChaseTarget()
     {
+        GetComponentInChildren<Animator>().SetBool("attack", false);
         GetComponentInChildren<Animator>().SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
     }
 
     private void AttackTarget()
     {
-        Debug.Log("Clown attack!");
+        GetComponentInChildren<Animator>().SetBool("attack", true);
+        //Debug.Log("Clown attack!");
     }
 
 

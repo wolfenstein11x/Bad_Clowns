@@ -757,11 +757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 402658019736604399, guid: 384d0f68bb992974dbc2044dfaa9ea20, type: 3}
       propertyPath: m_StoppingDistance
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 5834857618584661054, guid: 384d0f68bb992974dbc2044dfaa9ea20, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 0d4ded8e93b020d4588e174908428d45, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 384d0f68bb992974dbc2044dfaa9ea20, type: 3}
