@@ -7,10 +7,12 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] float hitPoints = 100f;
 
     private bool isDead = false;
+    private bool beenShot = false;
 
     public void TakeDamage(float damage)
     {
         hitPoints -= damage;
+        beenShot = true;
 
         if (hitPoints <= 0)
         {
@@ -30,5 +32,10 @@ public class EnemyHealth : MonoBehaviour
     public bool IsDead()
     {
         return isDead;
+    }
+
+    public bool BeenShot()
+    {
+        return beenShot;
     }
 }

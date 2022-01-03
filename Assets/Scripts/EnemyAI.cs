@@ -40,6 +40,10 @@ public class EnemyAI : MonoBehaviour
         {
             isProvoked = true;
         }
+        else if (health.BeenShot())
+        {
+            isProvoked = true;
+        }
         
     }
 
