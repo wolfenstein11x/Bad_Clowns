@@ -8,6 +8,12 @@ public class EnemyHealth : MonoBehaviour
 
     private bool isDead = false;
     private bool beenShot = false;
+    Collider collider;
+
+    void Start()
+    {
+        collider = GetComponent<Collider>();
+    }
 
     public void TakeDamage(float damage)
     {
@@ -26,6 +32,9 @@ public class EnemyHealth : MonoBehaviour
 
         isDead = true;
         GetComponent<Animator>().SetTrigger("die");
+
+        // disable collider so player doesn't have to walk around corpse
+        collider.enabled = false;
         
     }
 
