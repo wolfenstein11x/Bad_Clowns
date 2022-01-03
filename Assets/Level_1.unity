@@ -910,6 +910,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012327467}
   m_CullTransparentMesh: 1
+--- !u!20 &1151524027 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 1408979065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1194296617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1079,14 @@ PrefabInstance:
       propertyPath: impactCanvas
       value: 
       objectReference: {fileID: 2114449184}
+    - target: {fileID: 1430793881841400020, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: FPSCamera
+      value: 
+      objectReference: {fileID: 1151524027}
+    - target: {fileID: 1430793881841400020, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 1151524027}
     - target: {fileID: 2209166073456685465, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: gameOverCanvas
       value: 
