@@ -155,19 +155,6 @@ CapsuleCollider:
   m_Height: 2.4272728
   m_Direction: 1
   m_Center: {x: -1.2743002e-17, y: 0.7136364, z: -0.008709207}
---- !u!114 &2180665826714760197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5331088053779204334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20abbc252de74954991eb2582daa03cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 40
 --- !u!114 &2180665826714760196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,4 +167,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0324a653f6dfa5f499400dd4a716c90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
+  hitPoints: 150
+--- !u!114 &2180665826714760197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5331088053779204334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20abbc252de74954991eb2582daa03cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
