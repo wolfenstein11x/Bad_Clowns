@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2709758efbb364796f4618985f85b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRange: 25
+  chaseRange: 50
   turnSpeed: 5
   attackOffset: 0.3
 --- !u!1001 &402658018723823293
