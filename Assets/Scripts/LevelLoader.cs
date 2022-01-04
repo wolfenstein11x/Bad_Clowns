@@ -21,6 +21,21 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void NewGame()
+    {
         SceneManager.LoadScene("Level_1");
+    }
+
+    public void LoadCredits()
+    {
+        Debug.Log("credits");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
