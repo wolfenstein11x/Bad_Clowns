@@ -19,6 +19,11 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(activeScene.buildIndex);
     }
 
+    public void NextScene()
+    {
+        SceneManager.LoadScene(activeScene.buildIndex + 1);
+    }
+
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -26,7 +31,7 @@ public class LevelLoader : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("PreLevel_1");
     }
 
     public void LoadCredits()
