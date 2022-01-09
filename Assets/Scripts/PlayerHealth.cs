@@ -22,4 +22,10 @@ public class PlayerHealth : MonoBehaviour
             GetComponent<DeathHandler>().HandleDeath();
         }
     }
+
+    public void DrinkPotion(int health)
+    {
+        hitPoints += health;
+        healthBar.SetHealth(hitPoints);
+    }
 }
