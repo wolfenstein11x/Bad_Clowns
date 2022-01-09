@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] float damage = 40f;
+    [SerializeField] int damage = 40;
 
     Transform target;
 

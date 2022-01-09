@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
     [SerializeField] float range = 100f;
-    [SerializeField] float damage = 30f;
+    [SerializeField] int damage = 30;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
     [SerializeField] float hitEffectDuration = 0.1f;
