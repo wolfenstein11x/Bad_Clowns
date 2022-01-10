@@ -232,7 +232,9 @@ MonoBehaviour:
   - I hope you are finding this note safely, my love.
   - One of the bad clowns broke into my house, and I had to go hide in the cellar.
   - Look for me down in the cellar, I am waiting for you there, honey.
-  - To be continued...
+  - But I must warn you, in some places there is mud on the ground...
+  - Please watch your step. If you get stuck in the mud, the bad clowns might surround
+    you! Oh I'm so worried honey!
   lettersPerSecond: 45
 --- !u!4 &491366534
 Transform:

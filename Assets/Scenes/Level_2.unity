@@ -8492,6 +8492,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7237093050824429753, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 425628817}
+    - target: {fileID: 7237093050824429753, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237093051244706658, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 425628817}
+    - target: {fileID: 7237093051244706658, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 7237093052005113153, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

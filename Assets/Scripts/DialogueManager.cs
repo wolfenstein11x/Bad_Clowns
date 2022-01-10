@@ -8,11 +8,17 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] Text dialogueText;
     [SerializeField] List<string> lines;
     [SerializeField] int lettersPerSecond = 10;
+    [SerializeField] Text loadingText;
 
     
     int currentLine = -1;
     bool isTyping;
     
+    void Start()
+    {
+        loadingText.enabled = false;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z) && !isTyping)
@@ -26,6 +32,8 @@ public class DialogueManager : MonoBehaviour
 
             else
             {
+                dialogueText.enabled = false;
+                loadingText.enabled = true;
                 FindObjectOfType<LevelLoader>().NextScene();
             }
         }
