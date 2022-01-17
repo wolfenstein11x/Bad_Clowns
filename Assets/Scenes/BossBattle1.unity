@@ -1096,26 +1096,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 145139927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2badfddadc2d9d46836ca693ebb18c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 671857306d3a72d46aa804b9f794feac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 1000
-  healthBar: {fileID: 1782632871}
---- !u!114 &145139929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145139927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864318c203a6ed14ca9dd4fc9e4d9dc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chaseRange: 5
-  turnSpeed: 5
-  attackOffset: 0.3
+  damage1: 5
+  damage2: 10
 --- !u!1001 &167325624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5509,9 +5494,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HammerClown
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9180321958288230828, guid: 3e9792e095af95f49a91e2392188a116, type: 3}
-    - {fileID: 1493897774, guid: 3e9792e095af95f49a91e2392188a116, type: 3}
+    - target: {fileID: 5539108448663829854, guid: 3e9792e095af95f49a91e2392188a116, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1782632871}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e9792e095af95f49a91e2392188a116, type: 3}
 --- !u!1 &1099091530
 GameObject:

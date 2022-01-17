@@ -2142,10 +2142,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1284856910033168106}
   - component: {fileID: 5130891188114979984}
-  - component: {fileID: 1493897774}
-  - component: {fileID: 9180321958288230828}
   - component: {fileID: 1493897775}
   - component: {fileID: 145139928}
+  - component: {fileID: 5539108448663829854}
+  - component: {fileID: 145139929}
   m_Layer: 0
   m_Name: HammerClown
   m_TagString: Untagged
@@ -2188,34 +2188,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1493897774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918368659589037136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd2709758efbb364796f4618985f85b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chaseRange: 25
-  turnSpeed: 5
-  attackOffset: 0.3
---- !u!114 &9180321958288230828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918368659589037136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0324a653f6dfa5f499400dd4a716c90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 1000
 --- !u!195 &1493897775
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2252,6 +2224,35 @@ CapsuleCollider:
   m_Height: 2.4998002
   m_Direction: 1
   m_Center: {x: 0, y: 0.7499001, z: 0.03974068}
+--- !u!114 &5539108448663829854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918368659589037136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2badfddadc2d9d46836ca693ebb18c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 1000
+  healthBar: {fileID: 0}
+--- !u!114 &145139929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918368659589037136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864318c203a6ed14ca9dd4fc9e4d9dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseRange: 5
+  turnSpeed: 5
+  attackOffset: 0.3
 --- !u!1 &1933764092844459161
 GameObject:
   m_ObjectHideFlags: 0
