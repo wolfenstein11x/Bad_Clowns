@@ -39,11 +39,13 @@ public class Weapon : MonoBehaviour
             //Debug.Log(hit.transform.name);
             CreateHitImpact(hit);
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+            BossHealth bossTarget = hit.transform.GetComponent<BossHealth>();
 
             // protect against null reference error when shooting non-enemy
-            if (target == null) {return;}
+            if (target != null) { target.TakeDamage(damage); }
+            if (bossTarget != null) { bossTarget.TakeDamage(damage); }
 
-            target.TakeDamage(damage);
+            
         }
 
         else
