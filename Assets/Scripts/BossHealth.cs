@@ -7,6 +7,9 @@ public class BossHealth : MonoBehaviour
     [SerializeField] int hitPoints = 100;
     [SerializeField] HealthBar healthBar;
 
+    // needed due to health bar increment resolution not fine enough
+    [SerializeField] int minHealth = 126;
+
     private bool isDead = false;
     private bool beenShot = false;
     Collider collider;
@@ -23,7 +26,7 @@ public class BossHealth : MonoBehaviour
         healthBar.SetHealth(hitPoints);
         beenShot = true;
 
-        if (hitPoints <= 0)
+        if (hitPoints <= minHealth)
         {
             Die();
         }
