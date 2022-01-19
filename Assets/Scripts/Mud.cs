@@ -8,16 +8,16 @@ public class Mud : MonoBehaviour
     [SerializeField] float slowDownFactor = 0.1f;
 
     RigidbodyFirstPersonController fpsController;
-    float forwardSpeedOriginal;
-    float backwardSpeedOriginal;
-    float strafeSpeedOriginal;
+    //float forwardSpeedOriginal;
+    //float backwardSpeedOriginal;
+    //float strafeSpeedOriginal;
 
     void Start()
     {
         fpsController = FindObjectOfType<RigidbodyFirstPersonController>();
-        forwardSpeedOriginal = fpsController.movementSettings.ForwardSpeed;
-        backwardSpeedOriginal = fpsController.movementSettings.BackwardSpeed;
-        strafeSpeedOriginal = fpsController.movementSettings.StrafeSpeed;
+        //forwardSpeedOriginal = fpsController.movementSettings.ForwardSpeed;
+        //backwardSpeedOriginal = fpsController.movementSettings.BackwardSpeed;
+        //strafeSpeedOriginal = fpsController.movementSettings.StrafeSpeed;
     }
 
     private void OnTriggerEnter(Collider other)
