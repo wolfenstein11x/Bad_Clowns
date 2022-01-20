@@ -383,6 +383,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1121438363682029940, guid: 3e9792e095af95f49a91e2392188a116, type: 3}
+      propertyPath: levelCompleteCanvas
+      value: 
+      objectReference: {fileID: 1510798597}
     - target: {fileID: 1284856910033168106, guid: 3e9792e095af95f49a91e2392188a116, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -616,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7237093050339922290, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7237093050435773371, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
       propertyPath: m_Pivot.x
@@ -706,6 +710,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7237093050824429753, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1114195570}
+    - target: {fileID: 7237093050824429753, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237093051244706658, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1114195570}
+    - target: {fileID: 7237093051244706658, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 7237093052005113153, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -716,6 +736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+--- !u!223 &1510798597 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7237093050339922286, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}
+  m_PrefabInstance: {fileID: 1510798596}
+  m_PrefabAsset: {fileID: 0}
 --- !u!223 &1601836860 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 7237093050316345034, guid: 67edce75b03ef0b45bd3844f0e8e1d33, type: 3}

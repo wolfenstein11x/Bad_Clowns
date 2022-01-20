@@ -6,6 +6,7 @@ public class BossHealth : MonoBehaviour
 {
     [SerializeField] int hitPoints = 100;
     [SerializeField] HealthBar healthBar;
+    [SerializeField] FinishPoint finishPoint;
 
     // needed due to health bar increment resolution not fine enough
     [SerializeField] int minHealth = 126;
@@ -16,6 +17,7 @@ public class BossHealth : MonoBehaviour
 
     void Start()
     {
+        finishPoint.gameObject.SetActive(false);
         collider = GetComponent<Collider>();
         healthBar.SetMaxHealth(hitPoints);
     }
@@ -41,6 +43,9 @@ public class BossHealth : MonoBehaviour
 
         // disable collider so player doesn't have to walk around corpse
         collider.enabled = false;
+
+        // enable finish point now that boss is defeated
+        finishPoint.gameObject.SetActive(true);
         
     }
 

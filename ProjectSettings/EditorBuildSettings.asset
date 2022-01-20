@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BossBattle1.unity
     guid: 96306ac4892326c4da1181644ced206d
   - enabled: 1
+    path: Assets/Scenes/PreLevel4.unity
+    guid: c9520a4822bfa0c409153f46f4e03cf8
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 9634c237fa8927641970e457fdb3c3ef
   m_configObjects: {}
