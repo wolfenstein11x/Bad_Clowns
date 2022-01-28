@@ -5,7 +5,7 @@ using UnityEngine;
 public class LaughingClown : MonoBehaviour
 {
     [SerializeField] GameObject[] spawners;
-
+    [SerializeField] ParticleSystem summonEffect;
     [SerializeField] float spellRange = 15f;
     [SerializeField] float waitTimeMin = 3f;
     [SerializeField] float waitTimeMax = 7f;
@@ -48,6 +48,7 @@ public class LaughingClown : MonoBehaviour
     {
         var spawnerIndex = Random.Range(0, spawners.Length);
 
+        summonEffect.Play();
         GameObject newClown = Instantiate(spawners[spawnerIndex], spawnPoint.position, spawnPoint.rotation) as GameObject;
 
         newClown.transform.parent = transform;
