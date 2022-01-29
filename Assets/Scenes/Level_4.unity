@@ -2706,14 +2706,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 94514787, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5605757341596277703, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5605757342768497954, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2763,37 +2755,17 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5605757342870165565, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5605757342870165565, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
       propertyPath: impactCanvas
       value: 
       objectReference: {fileID: 689256066}
     - target: {fileID: 6008697234395098681, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6008697234395098681, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 689256065}
-    - target: {fileID: 6778082289586956148, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8378978517162864257, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 689256064}
-    - target: {fileID: 8378978517162864257, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8726799540195035511, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fddaa59436c7cb4383fe968ec3c395c, type: 3}
 --- !u!1001 &740922466
