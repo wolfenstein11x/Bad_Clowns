@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3368680860968608595}
   - component: {fileID: 3368680860968608594}
+  - component: {fileID: 3438691711089651854}
+  - component: {fileID: 90288584}
   m_Layer: 0
   m_Name: Oscillator
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3368680860968608605}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6, y: 1.914, z: 8.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -50,6 +52,32 @@ MonoBehaviour:
   movementVec: {x: 0, y: 0, z: 2}
   movementFactor: 0
   period: 2
+--- !u!114 &3438691711089651854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3368680860968608605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65e7126c402ef04aafd87296baaad1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 60
+--- !u!65 &90288584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3368680860968608605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.108953, z: 3.4845967}
+  m_Center: {x: 0, y: -0.008900166, z: -0.8774636}
 --- !u!1 &3368680861845422443
 GameObject:
   m_ObjectHideFlags: 0
