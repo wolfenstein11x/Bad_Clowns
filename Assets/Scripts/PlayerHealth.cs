@@ -28,4 +28,11 @@ public class PlayerHealth : MonoBehaviour
         hitPoints += health;
         healthBar.SetHealth(hitPoints);
     }
+
+    public void Die()
+    {
+        hitPoints = 0;
+        GetComponent<DeathHandler>().HandleDeath();
+
+    }
 }
