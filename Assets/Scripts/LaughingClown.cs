@@ -46,6 +46,8 @@ public class LaughingClown : MonoBehaviour
 
     public void SpawnClown()
     {
+        if (spawners.Length == 0) { return; }
+
         var spawnerIndex = Random.Range(0, spawners.Length);
 
         summonEffect.Play();
