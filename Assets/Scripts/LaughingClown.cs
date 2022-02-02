@@ -27,6 +27,8 @@ public class LaughingClown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameObject.tag == "NonSpawner") { return; }
+
         if (!isLaughing && TargetInRange())
         {
             StartCoroutine(LaughSpell());

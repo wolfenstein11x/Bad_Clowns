@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour
+public class LaugherAI : MonoBehaviour
 {
     
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
     [SerializeField] float attackOffset = 0.3f;
+    [SerializeField] float laughTime = 2f;
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
     EnemyHealth health;
     Transform target;
+    bool hasLaughed = false;
+    
     
     
     void Start()
@@ -34,8 +37,9 @@ public class EnemyAI : MonoBehaviour
             navMeshAgent.enabled = false;
             return;
         }
-
+        
         distanceToTarget = Vector3.Distance(target.position, transform.position);
+        
         if (isProvoked)
         {
             EngageTarget();
@@ -54,6 +58,7 @@ public class EnemyAI : MonoBehaviour
     private void EngageTarget()
     {
         FaceTarget();
+        LaughOnce();
 
         if (distanceToTarget > navMeshAgent.stoppingDistance)
         {
@@ -68,6 +73,8 @@ public class EnemyAI : MonoBehaviour
 
     private void ChaseTarget()
     {
+        if (!hasLaughed) { return; }
+
         GetComponentInChildren<Animator>().SetBool("attack", false);
         GetComponentInChildren<Animator>().SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
@@ -85,6 +92,22 @@ public class EnemyAI : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed); 
+    }
+
+    private void LaughOnce()
+    {
+        if (hasLaughed) { return; }
+
+        StartCoroutine(LaughCoroutine());
+    }
+
+    private IEnumerator LaughCoroutine()
+    {
+        GetComponentInChildren<Animator>().SetTrigger("laugh");
+       
+        yield return new WaitForSeconds(laughTime);
+
+        hasLaughed = true;
     }
 
     
