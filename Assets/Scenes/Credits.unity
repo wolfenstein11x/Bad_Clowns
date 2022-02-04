@@ -910,10 +910,13 @@ MonoBehaviour:
 
     Potions: GameplanVFX
 
-    Fonts:
-    ''Scary'' by Kevin Byrd
+    Circus
+    props: Dmitriy Dryzhak
 
-    ''Orange Kid'' by Typodermic Fonts
+    Fonts: ''Scary'' by Kevin Byrd
+
+    ''Orange Kid''
+    by Typodermic Fonts
 
 '
 --- !u!222 &2046891841
