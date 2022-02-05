@@ -236,7 +236,7 @@ MonoBehaviour:
   - But be careful walking through the woods, honey...
   - The woods is always dangerous when these bad clowns are lurking in it, and especially
     at night...
-  - Just try to stay on the path. You know that the path leads to my house. I don't
+  - Just try to stay on the path, and follow the light posts to my house. I don't
     want you to go off the path and get lost in the woods, my love!
   lettersPerSecond: 45
   loadingText: {fileID: 1182507232}
