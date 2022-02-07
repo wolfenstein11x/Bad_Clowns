@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PreLevel4.unity
     guid: c9520a4822bfa0c409153f46f4e03cf8
   - enabled: 1
+    path: Assets/Scenes/Cutscene2.unity
+    guid: 729ddf42c77a9eb439429e84404aac15
+  - enabled: 1
     path: Assets/Scenes/Carnival.unity
     guid: 9ee6cce2806fadd498cb737fc2cc004b
   - enabled: 1
