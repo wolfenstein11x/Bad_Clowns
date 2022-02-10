@@ -229,7 +229,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 588671949}
   lines:
-  - To be continued...
+  - My love, you saved my life!
+  - I've never been more happy to see you than I am right now!
+  - Now you can take me home, and we can do it...
+  - In bed...
   lettersPerSecond: 45
   loadingText: {fileID: 777565267}
 --- !u!4 &491366534

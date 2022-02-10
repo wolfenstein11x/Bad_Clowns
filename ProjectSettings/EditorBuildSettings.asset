@@ -42,7 +42,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_4.unity
     guid: be0cc245e4b998941b024e20de5d09ca
   - enabled: 1
-    path: Assets/Scenes/PlaceholderDelete.unity
+    path: Assets/Scenes/FinalBossCutscene.unity
+    guid: 44f9257dd84217746a5d39bcd7ec30e0
+  - enabled: 1
+    path: Assets/Scenes/FinalBoss.unity
+    guid: d9edc785688a8a34fbbdd8be96d83d79
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
     guid: fa784585dbc948c4a81ea571e902fadb
   - enabled: 1
     path: Assets/Scenes/Credits.unity
