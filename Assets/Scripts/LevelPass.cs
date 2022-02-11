@@ -22,5 +22,10 @@ public class LevelPass : MonoBehaviour
         SceneManager.LoadScene("Level_4");
     }
 
+    public void LoadLevel5()
+    {
+        SceneManager.LoadScene("FinalBossCutscene");
+    }
+
 
 }

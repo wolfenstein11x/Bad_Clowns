@@ -6,6 +6,11 @@ public class FinishPoint : MonoBehaviour
 {
     [SerializeField] Canvas levelCompleteCanvas;
 
+    void Awake()
+    {
+        levelCompleteCanvas.enabled = false;
+    }
+
     void Start()
     {
         levelCompleteCanvas.enabled = false;
