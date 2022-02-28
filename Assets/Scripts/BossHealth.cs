@@ -7,13 +7,14 @@ public class BossHealth : MonoBehaviour
     [SerializeField] int hitPoints = 100;
     [SerializeField] HealthBar healthBar;
     [SerializeField] FinishPoint finishPoint;
-
+    
     // needed due to health bar increment resolution not fine enough
     [SerializeField] int minHealth = 126;
 
     private bool isDead = false;
     private bool beenShot = false;
     Collider collider;
+
 
     void Start()
     {
